@@ -1,0 +1,62 @@
+.meal-sec{
+  text-align: center;
+  margin: 10px;
+}
+
+.meal-main-sec img{
+  width: 500px;
+}
+input{
+  padding: 10px 15px;
+  margin:  0 15px;
+  font-size: 18px;
+}
+
+button{
+margin:  15px 0;
+padding: 10px 15px;
+font-size: 15px;
+}
+.show-meal{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.show-meal img{
+  width: 400px;
+}
+
+.meal-details{
+  text-align: center;
+}
+
+.meal-details img{
+  width: 300px;
+
+}
+
+/*
+** Responsive css
+*/
+
+@media (max-width:800px) {
+.show-meal{
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 15px;
+  
+}
+.show-meal img{
+  width: 98%;
+}
+}
+@media (max-width:500px) {
+.show-meal{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.show-meal img{
+  width: 98%;
+}
+}
